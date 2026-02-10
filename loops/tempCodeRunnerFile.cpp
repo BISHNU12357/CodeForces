@@ -5,10 +5,11 @@ int main()
 {
     int n;
     cin >> n;
-    for (int i = 0; i <= n; i++)
+    int mul = n;
+    while (n--)
     {
-        if (i % 2 == 0)
-            cout << i << " ";
+        mul *= n;
     }
+    cout << mul << endl;
     return 0;
 }

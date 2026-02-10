@@ -3,13 +3,16 @@ using namespace std;
 
 int main()
 {
-    int n;
+    long long n;
     cin >> n;
-    int mul = n;
-    while (n--)
+    long long mul = 1;
+
+    while (n > 0)
     {
         mul *= n;
+        n--;
     }
     cout << mul << endl;
+
     return 0;
 }
