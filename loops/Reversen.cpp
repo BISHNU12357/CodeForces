@@ -6,12 +6,17 @@ int main()
     long long n;
     cin >> n;
     long long newNumber = 0;
-    while (n > 0)
+    if (n == 0)
+        cout << newNumber << endl;
+    else
     {
-        int x = n % 10;
-        newNumber += x;
-        newNumber *= 10;
-        n /= 10;
+        while (n > 0)
+        {
+            int x = n % 10;
+            newNumber = (newNumber * 10) + x;
+            n /= 10;
+        }
+        cout << newNumber << endl;
     }
-    cout << newNumber << endl;
     return 0;
+}
