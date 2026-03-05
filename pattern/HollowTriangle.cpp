@@ -7,27 +7,28 @@ int main()
     cin >> n;
     for (int i = 1; i <= n; i++)
     {
-        if (i % 2 != 0)
+        int temp = n - i;
+        if (i == n)
         {
             for (int j = 0; j < i; j++)
             {
-                if (j % 2 == 0)
-                    cout << 0;
-                else
-                    cout << 1;
+                cout << "*" << " ";
             }
         }
         else
         {
+            while (temp--)
+                cout << " ";
             for (int j = 0; j < i; j++)
             {
-                if (j % 2 == 0)
-                    cout << 1;
+                int ntemp = i - 1;
+                if (j == 0 || j == ntemp)
+                    cout << "*" << " ";
                 else
-                    cout << 0;
+                    cout << " ";
             }
+            cout << endl;
         }
-        cout << endl;
     }
     return 0;
 }
