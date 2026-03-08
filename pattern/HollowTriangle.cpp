@@ -23,9 +23,9 @@ int main()
             {
                 int ntemp = i - 1;
                 if (j == 0 || j == ntemp)
-                    cout << "*" << " ";
+                    cout << "* ";
                 else
-                    cout << " ";
+                    cout << "  ";
             }
             cout << endl;
         }
